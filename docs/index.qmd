@@ -50,7 +50,10 @@ You will also want to install git on your local computer and have a GitHub clien
 
 ## Add Support Files
 
-* Add a `.gitignore` with `.Rproj*/*` and (if on a Mac) `.DS_Store`
+* Add a `.gitignore` with:
+  * `.Rproj`
+  * .Rproj*/*` 
+  * and (if on a Mac) `.DS_Store`
 * Add an empty file called `.nojekyll`
 
 ## Push to GitHub
