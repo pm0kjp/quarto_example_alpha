@@ -1,5 +1,6 @@
 ---
-title: "Example Slides"
+title: "Creating Slides in Quarto"
+author: Joy Payton
 format: revealjs
 editor: visual
 ---
@@ -24,6 +25,7 @@ We'll be using GitHub to make a published slide deck. There are other ways to do
 
 ## Create a New Quarto Presentation
 
+* Change any yml
 * Save it with a useful name (`index.qmd` is particularly good)
 * Render and take a peek!
 
@@ -36,6 +38,19 @@ We'll be using GitHub to make a published slide deck. There are other ways to do
 
 * Push changes to GitHub
 * Make GitHub Pages changes ("docs", main)
+
+## Improve your slides with R / Markdown
+
+* Add formatting
+* Add code (example: countdown timer!)
+* Add images
+
+## Add special stuff
+
+Quarto-specific:
+
+* Speaker notes
+* Layout
 
 
 
