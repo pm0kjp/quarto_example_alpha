@@ -5,18 +5,36 @@ format: revealjs
 editor: visual
 ---
 
+## Today's Itinerary:
+
+* Do some setup to allow for publishing your slides online
+* Create some boring slides 
+* Publish boring slides
+* Make more interesting slides
+* Publish, rinse, repeat.
+
 ## Quarto
 
-Quarto enables you to weave together content and executable code into a finished presentation. To learn more about Quarto presentations see <https://quarto.org/docs/presentations/>.
+* Quarto ≈ R Markdown.  
+* We'll use RStudio to write Quarto.
+* <https://quarto.org/docs/presentations/>
 
 ## GitHub
 
-We'll be using GitHub to make a published slide deck. There are other ways to do this, too, but this might be the easiest, and requires no additional account setups.
+We'll be using GitHub (<https://github.com>) to make a published slide deck. There are other ways to publish your slides, but this might be the easiest, and requires no additional account setups.
+
+GitHub offers **version control**.
+
+## GitHub
+
+New to GitHub?  You can sign up for free! <https://github.com> 
+
+You will also want to install git on your local computer and have a GitHub client like GitHub Desktop installed as well.
 
 ## Create a New Repository
 
 * Create a new repository in GitHub, and clone it to your desktop.
-* Make a new folder called "docs"
+* Make a new folder called "docs" within your repo -- this is where your online slides / website will live.
 
 ## Create a New R Project 
 
@@ -25,7 +43,8 @@ We'll be using GitHub to make a published slide deck. There are other ways to do
 
 ## Create a New Quarto Presentation
 
-* Change any yml
+* File > New > Quarto Presentation
+* Change any yml you want at the top
 * Save it with a useful name (`index.qmd` is particularly good)
 * Render and take a peek!
 
@@ -51,6 +70,7 @@ Quarto-specific:
 
 * Speaker notes
 * Layout
+* Themes
 
 
 
