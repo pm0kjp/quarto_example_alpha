@@ -8,17 +8,34 @@ editor: visual
 
 Quarto enables you to weave together content and executable code into a finished presentation. To learn more about Quarto presentations see <https://quarto.org/docs/presentations/>.
 
-## Bullets
+## GitHub
 
-When you click the **Render** button a document will be generated that includes:
+We'll be using GitHub to make a published slide deck. There are other ways to do this, too, but this might be the easiest, and requires no additional account setups.
 
--   Content authored with markdown
--   Output from executable code
+## Create a New Repository
 
-## Code
+* Create a new repository in GitHub, and clone it to your desktop.
+* Make a new folder called "docs"
 
-When you click the **Render** button a presentation will be generated that includes both content and the output of embedded code. You can embed code like this:
+## Create a New R Project 
 
-```{r}
-1 + 1
-```
+* Create a new R Project in an existing directory (the one you just set up)
+* Open in new Session
+
+## Create a New Quarto Presentation
+
+* Save it with a useful name (`index.qmd` is particularly good)
+* Render and take a peek!
+
+## Add Support Files
+
+* Add a `.gitignore` with `.Rproj*/*` and (if on a Mac) `.DS_Store`
+* Add an empty file called `.nojekyll`
+
+## Push to GitHub
+
+* Push changes to GitHub
+* Make GitHub Pages changes ("docs", main)
+
+
+

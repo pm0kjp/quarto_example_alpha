@@ -333,22 +333,44 @@
 <h2>Quarto</h2>
 <p>Quarto enables you to weave together content and executable code into a finished presentation. To learn more about Quarto presentations see <a href="https://quarto.org/docs/presentations/" class="uri">https://quarto.org/docs/presentations/</a>.</p>
 </section>
-<section id="bullets" class="slide level2">
-<h2>Bullets</h2>
-<p>When you click the <strong>Render</strong> button a document will be generated that includes:</p>
+<section id="github" class="slide level2">
+<h2>GitHub</h2>
+<p>We’ll be using GitHub to make a published slide deck. There are other ways to do this, too, but this might be the easiest, and requires no additional account setups.</p>
+</section>
+<section id="create-a-new-repository" class="slide level2">
+<h2>Create a New Repository</h2>
 <ul>
-<li>Content authored with markdown</li>
-<li>Output from executable code</li>
+<li>Create a new repository in GitHub, and clone it to your desktop.</li>
+<li>Make a new folder called “docs”</li>
 </ul>
 </section>
-<section id="code" class="slide level2">
-<h2>Code</h2>
-<p>When you click the <strong>Render</strong> button a presentation will be generated that includes both content and the output of embedded code. You can embed code like this:</p>
-<div class="cell">
-<div class="cell-output cell-output-stdout">
-<pre><code>[1] 2</code></pre>
-</div>
-</div>
+<section id="create-a-new-r-project" class="slide level2">
+<h2>Create a New R Project</h2>
+<ul>
+<li>Create a new R Project in an existing directory (the one you just set up)</li>
+<li>Open in new Session</li>
+</ul>
+</section>
+<section id="create-a-new-quarto-presentation" class="slide level2">
+<h2>Create a New Quarto Presentation</h2>
+<ul>
+<li>Save it with a useful name (<code>index.qmd</code> is particularly good)</li>
+<li>Render and take a peek!</li>
+</ul>
+</section>
+<section id="add-support-files" class="slide level2">
+<h2>Add Support Files</h2>
+<ul>
+<li>Add a <code>.gitignore</code> with <code>.Rproj*/*</code> and (if on a Mac) <code>.DS_Store</code></li>
+<li>Add an empty file called <code>.nojekyll</code></li>
+</ul>
+</section>
+<section id="push-to-github" class="slide level2">
+<h2>Push to GitHub</h2>
+<ul>
+<li>Push changes to GitHub</li>
+<li>Make GitHub Pages changes (“docs”, main)</li>
+</ul>
 <div class="footer footer-default">
 
 </div>
@@ -564,44 +586,6 @@
         ]
       });
     </script>
-    
-    <script>
-      // htmlwidgets need to know to resize themselves when slides are shown/hidden.
-      // Fire the "slideenter" event (handled by htmlwidgets.js) when the current
-      // slide changes (different for each slide format).
-      (function () {
-        // dispatch for htmlwidgets
-        function fireSlideEnter() {
-          const event = window.document.createEvent("Event");
-          event.initEvent("slideenter", true, true);
-          window.document.dispatchEvent(event);
-        }
-
-        function fireSlideChanged(previousSlide, currentSlide) {
-          fireSlideEnter();
-
-          // dispatch for shiny
-          if (window.jQuery) {
-            if (previousSlide) {
-              window.jQuery(previousSlide).trigger("hidden");
-            }
-            if (currentSlide) {
-              window.jQuery(currentSlide).trigger("shown");
-            }
-          }
-        }
-
-        // hookup for slidy
-        if (window.w3c_slidy) {
-          window.w3c_slidy.add_observer(function (slide_num) {
-            // slide_num starts at position 1
-            fireSlideChanged(null, w3c_slidy.slides[slide_num - 1]);
-          });
-        }
-
-      })();
-    </script>
-
     <script id="quarto-html-after-body" type="application/javascript">
     window.document.addEventListener("DOMContentLoaded", function (event) {
       const toggleBodyColorMode = (bsSheetEl) => {
